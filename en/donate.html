@@ -8,7 +8,9 @@
 		<!-- InstanceEndEditable -->
 		<link rel="stylesheet" type="text/css" media="screen" href="../styles.css"/>
 		<link rel="stylesheet" type="text/css" media="handheld" href="../styles_mobile.css" />
-		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://checkout.stripe.com/checkout.js"></script>
+
 		<!-- InstanceBeginEditable name="head" -->
 		<!-- InstanceEndEditable -->
 		
@@ -38,23 +40,30 @@
 						<h1>Donate</h1>
 					<!-- InstanceEndEditable --></div>
 					<div id="special">
-					<!-- InstanceBeginEditable name="Special" --><form action="/charge" method="POST">
+					<!-- InstanceBeginEditable name="Special" -->
+					
+
+<form action="charge3.php" method="POST">
   <script
     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-    data-key="pk_test_qpmrLWnXa6O5XBnc7KqcwV4w"
+    data-key="pk_test_fxKSu4PlPJGJYRhK5Ej4OAOd"
     data-image="/img/documentation/checkout/marketplace.png"
-    data-name="Test Donation"
-    data-description="$10.00 tax-deductible donation"
-    data-amount="1000"
-    data-label="Donate">
+    data-name="Boost Kids!"
+    data-description="Tax-deductible donation"
+    data-amount="2000">
   </script>
-</form><!-- InstanceEndEditable -->
+</form>
+
+
+					
+
+<!-- InstanceEndEditable -->
 					</div><!-- InstanceBeginEditable name="Content" -->
 					<h2>Why?</h2>
 					<p>Boost Kids! is a community organization dedicated to providing children with the ability to read and write. As a non-profit, Boost Kids! is dependent on the donations of the public – your donations –  to be able to continue offering its services.</p>
 					<p>In addition, as a certified 501(c)(3) non-profit organization, your donation to Boost Kids! will be <strong>fully tax-deductible</strong>.</p>
 					<h2>How?</h2>
-					<p>Donations to Boost Kids! can be	made	via	PayPal.	<a href="https://www.paypal-media.com/about">PayPal</a> is a secure web payment system that accepts all major credits cards. Boost Kids! will never store your credit card or other payment information.</p>
+					<p>Donations to Boost Kids! can be	made	via	Stripe.	<a href="https://stripe.com/">Stripe</a> is a secure web payment system that accepts all major credits cards. Boost Kids! will never store your credit card or other payment information.</p>
 					<h2>Where?</h2>
 					<p>Click the button above to make a donation.</p>
 					<!-- InstanceEndEditable --></div></td>
